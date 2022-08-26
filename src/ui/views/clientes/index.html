@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+</head>
+
+<body>
+
+    <div class="container-app">
+        <div class="navigation-app">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <span class="title title-main-sidebar">Gestión de cuentas de Omegapro</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        <span class="icon"><i class="fa-solid fa-gauge"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><i class="fa-solid fa-users"></i></span>
+                        <span class="title">Clientes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../licencias/index.html">
+                        <span class="icon"><i class="fa-solid fa-money-bill"></i></span>
+                        <span class="title">Licencias</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+                <div class="user">
+                    <i class="fa fa-user"></i>
+                </div>
+            </div>
+
+
+            <!-- Content main -->
+            <div class="wrapper">
+                <div class="container">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-center">
+                                <a href="createCustomer.html" class="btn btn-outline-light">Crear nuevo cliente</a>
+                                <button class="btn btn-outline-light mx-2" id="show-list" state="1">Ver
+                                    clientes
+                                    inactivos</button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-dark table-bordered table-striped" id="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nombre</th>
+                                        <th>Correo</th>
+                                        <th>Estado</th>
+                                        <th class="text-center">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="tbl-clientes">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../../assets/js/customers.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>

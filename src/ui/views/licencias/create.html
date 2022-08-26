@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+
+</head>
+
+<body>
+
+    <div class="container-app">
+        <div class="navigation-app">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <span class="title title-main-sidebar">Gestión de cuentas de Omegapro</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        <span class="icon"><i class="fa-solid fa-gauge"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../clientes/index.html">
+                        <span class="icon"><i class="fa-solid fa-users"></i></span>
+                        <span class="title">Clientes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><i class="fa-solid fa-money-bill"></i></span>
+                        <span class="title">Licencias</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+                <div class="user">
+                    <i class="fa fa-user"></i>
+                </div>
+            </div>
+
+            <!-------- content -------->
+
+
+            <div class="wrapper">
+                <div class="container">
+                    <form action="" class="card text-bg-dark" id="form-licencia">
+                        <div class="card-header d-flex justify-content-between">
+                            <h4 class="text-center text-white">
+                                Crear licencia
+                            </h4>
+                            <a href="index.html" class="btn btn-outline-danger">
+                                Regresar
+                            </a>
+                        </div>
+                        <div class="card-body text-light">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control nombre bg-dark text-white" id="floatingInput"
+                                    placeholder="Nombre de la licencia">
+                                <label for="floatingInput">Nombre de la licencia</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" class="form-control valor bg-dark text-white" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Valor de la licencia</label>
+                            </div>
+
+                            <button class="btn btn-outline-light w-100 mt-4" type="submit">
+                                Crear
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-------- content -------->
+
+
+
+        </div>
+    </div>
+
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/licenses.js"></script>
+</body>
+
+</html>
